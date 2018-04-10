@@ -9,6 +9,8 @@
 
         <meta name="description" content="">
 
+        <link rel="icon" href="{{ asset('/img/logo/favicon.png') }}" type="image/x-icon" />
+
         <title>Yarno | @yield('title')</title>
 
         <!-- <link rel="icon" href="{{ URL::asset('/images/') }}"> -->
@@ -25,6 +27,7 @@
         <!-- start of the page content -->
         <div style="height: 100%; width: 100%; padding: 0; margin: 0;" data-enhance="false" data-role="page">
             <div class="row" style="height: 100vh; width: 100%; margin: 0; padding: 0;">
+              <div class="loader"></div>
                 @yield('content')
             </div>
         </div>
@@ -33,6 +36,11 @@
         <script src="{{ URL::asset('plugins/jquery/js/jquery-3.2.1.min.js') }}"></script>
         <script src="{{ URL::asset('plugins/tether/js/tether.min.js')}}"></script>
         <script src="{{ URL::asset('plugins/bootstrap/js/bootstrap.js')}}"></script>
+        <script type="text/javascript">
+          $(window).on('load', function() {
+            $(".loader").fadeOut("slow");
+          });
+        </script>
         @yield('js')
     </body>
 </html>
