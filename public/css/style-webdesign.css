@@ -7,16 +7,16 @@
 .arrow1 {
   position: absolute;
   top: 30%;
-  width: 80%;
-  left: 10%;
+  width: 60%;
+  left: 20%;
 }
 
 .arrow2 {
   position: absolute;
   top: 50%;
   transform: rotate(180deg);
-  width: 80%;
-  left: 10%;
+  width: 60%;
+  left: 20%;
 }
 
 /* navbar */

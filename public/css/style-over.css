@@ -40,7 +40,29 @@
 /* banner */
 
 .left-banner {
-  background-image: url('/img/banners/homepage.jpg');
+  background-image: url('/img/banners/over.jpg');
   background-position: center;
   background-size: cover;
+}
+
+.yarno {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+  transform: scaleX(-1);
+}
+
+/* info text */
+
+.top-text {
+  position: absolute;
+  top: 25%;
+  font-size: 24px;
+}
+
+.left-text {
+  position: absolute;
+  top: 60%;
+  font-size: 24px;
 }
