@@ -119,4 +119,14 @@
   });
   });
   </script>
+  <script>
+  $(document).ready(function() {
+    $(".arrow1").click(function(event){
+        $('html,body').animate({scrollTop: '+=150px'}, "slow");
+        console.log('bier');
+    });
+});
+
+
+</script>
 @endsection
