@@ -15,7 +15,9 @@
 @section('content')
 
 
-  <div class="col-1 left-bar no-padding-margin">
+  <div class="col-1 left-bar no-padding-margin" style="
+    height:  100%;
+">
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow1" alt="arrow">
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow2" alt="arrow">
   </div>
@@ -116,17 +118,29 @@
     tiles_nested_optimal_tile_width: 400,
     tiles_space_between_cols: 15,
 		tiles_space_between_cols_mobile: 5,
+    tile_enable_action:	true,
+    tile_enable_overlay: true,
+		tile_overlay_opacity: 0.4,
+		tile_overlay_color: "#000000",
+    tile_enable_textpanel:true,
+	  tile_textpanel_bg_color: "#2b2d2c",
+	  tile_textpanel_bg_opacity:0.8,
+	  tile_textpanel_title_color: "white",
+	  tile_textpanel_title_text_align: "center",
   });
   });
   </script>
   <script>
   $(document).ready(function() {
     $(".arrow1").click(function(event){
-        $('html,body').animate({scrollTop: '+=150px'}, "slow");
-        console.log('bier');
+        $('html,body').animate({scrollTop: '-=150px'}, "slow");
+        console.log('test');
     });
-});
+    $(".arrow2").click(function(event){
+        $('html,body').animate({scrollTop: '+=150px'}, "slow");
+        console.log('test');
+    });
+  });
+  </script>
 
-
-</script>
 @endsection
