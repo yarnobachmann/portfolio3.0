@@ -69,11 +69,7 @@
     justify-content: center;
 }
 
-/* navbar */
 
-.active {
-  border-bottom: 2px solid #2b2d2c;
-}
 
 /* loader */
 
@@ -86,4 +82,45 @@
     z-index: 9999;
     background: url('https://colinbendell.cloudinary.com/image/upload/c_crop,f_auto,g_auto,h_350,w_400/v1512090971/Wizard-Clap-by-Markus-Magnusson.gif') 50% 50% no-repeat rgb(249,249,249);
     opacity: .8;
+}
+
+/* navbar */
+
+.logo {
+  width: 100%;
+}
+
+.nav-bar a:hover {
+  text-decoration: none;
+}
+
+.nav-bar a:active {
+  text-decoration: none;
+}
+
+.nav-bar {
+  margin-top: 2%;
+  margin-right: 2%;
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+  padding: 0;
+  float: right;
+}
+
+.nav-bar span {
+  color: #030303;
+  font-size: 40px;
+}
+
+.nav-bar a {
+  display: inline-block;
+  padding-right: 30px;
+  color: #2b2d2c;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline!important;
 }

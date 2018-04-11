@@ -4,38 +4,7 @@
   background-color: #2b2d2c;
 }
 
-/* navbar */
 
-.logo {
-  width: 8%;
-}
-
-.nav-bar a:hover {
-  text-decoration: none;
-}
-
-.nav-bar a:active {
-  text-decoration: none;
-}
-
-.nav-bar {
-  top: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  line-height: 40px;
-}
-
-.nav-bar span {
-  color: #030303;
-  font-size: 40px;
-}
-
-.nav-bar a {
-  color: #2b2d2c;
-  font-size: 30px;
-  text-decoration: none;
-}
 
 /* banner */
 

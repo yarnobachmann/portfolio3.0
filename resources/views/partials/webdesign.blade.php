@@ -19,9 +19,12 @@
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow1" alt="arrow">
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow2" alt="arrow">
   </div>
-  <div class="col-11 no-padding-margin uppercase" style="background-color: #c6314f; overflow: auto;">
-    <div class="offset-5 col-7 nav-bar">
+  <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow: auto;">
+    <div class="nav-bar">
     @include('partials.navbar')
+    <div class="space">
+
+    </div>
     <div class="offset-1 col-10" style="background-color: #FFF; height: 280px; margin-top:5%;">
 
     </div>
@@ -33,4 +36,18 @@
     </div>
   </div>
 
+@endsection
+
+@section('js')
+<script>
+
+  $(document).ready(function() {
+    $(".arrow2").click(function(event){
+      $('#scroll').animate({scrollTop: '+=150px'}, 300);
+    });
+    $(".arrow1").click(function(event){
+      $('#scroll').animate({scrollTop: '-=150px'}, 300);
+    });
+  });
+</script>
 @endsection

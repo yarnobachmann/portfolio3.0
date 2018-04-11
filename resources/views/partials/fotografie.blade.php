@@ -15,14 +15,12 @@
 @section('content')
 
 
-  <div class="col-1 left-bar no-padding-margin" style="
-    height:  100%;
-">
+  <div class="col-1 left-bar no-padding-margin" style="height:  100%;">
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow1" alt="arrow">
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow2" alt="arrow">
   </div>
-  <div class="col-11 no-padding-margin uppercase" style="background-color: #c6314f; overflow: auto;">
-    <div class="offset-5 col-7 nav-bar">
+  <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow: auto;">
+    <div class="nav-bar">
     @include('partials.navbar')
     <div class="offset-5" id="gallery" style="display:none;">
 
@@ -127,20 +125,20 @@
 	  tile_textpanel_bg_opacity:0.8,
 	  tile_textpanel_title_color: "white",
 	  tile_textpanel_title_text_align: "center",
+    theme_enable_preloader: false,
   });
   });
   </script>
   <script>
-  $(document).ready(function() {
-    $(".arrow1").click(function(event){
-        $('html,body').animate({scrollTop: '-=150px'}, "slow");
-        console.log('test');
+
+    $(document).ready(function() {
+      $(".arrow2").click(function(event){
+        $('#scroll').animate({scrollTop: '+=150px'}, 300);
+      });
+      $(".arrow1").click(function(event){
+        $('#scroll').animate({scrollTop: '-=150px'}, 300);
+      });
     });
-    $(".arrow2").click(function(event){
-        $('html,body').animate({scrollTop: '+=150px'}, "slow");
-        console.log('test');
-    });
-  });
   </script>
 
 @endsection

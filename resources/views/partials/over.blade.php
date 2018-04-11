@@ -19,7 +19,7 @@
 
   </div>
   <div class="col-8 no-padding-margin" style="background-color: #c6314f;">
-    <div class="offset-3 col-9 nav-bar">
+    <div class="nav-bar">
     @include('partials.navbar')
     <img src="{{ asset('/img/banners/over-front.jpg') }}" class="yarno" alt="Yarno">
     <div class="offset-1 col-10 top-text">
