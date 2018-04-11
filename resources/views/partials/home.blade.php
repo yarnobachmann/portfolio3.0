@@ -12,10 +12,12 @@
 
   <div id="myNav" class="overlay">
     <div class="overlay-content uppercase">
-      <a href="{{ url('/fotografie') }}">Fotografie</a>
-      <a href="{{ url('/webdesign') }}">Webdesign</a>
-      <a href="{{ url('/over') }}">Over</a>
+
+      <a href="{{ url('/fotografie') }}">Fotografie</a><br>
+      <a href="{{ url('/webdesign') }}">Webdesign</a><br>
+      <a href="{{ url('/over') }}">Over</a><br>
       <a href="{{ url('/contact') }}">Contact</a>
+
     </div>
   </div>
 

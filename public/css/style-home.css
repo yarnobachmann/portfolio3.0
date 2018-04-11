@@ -148,20 +148,26 @@
 }
 
 .overlay-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     top: 25%;
-    width: 100%;
     text-align: center;
     margin-top: 30px;
 }
 
 .overlay a {
+    font-weight: bolder;
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 42px;
     color: #c6314f;
     display: block;
     transition: 0.3s;
+    white-space: nowrap;
+
 }
 
 .overlay a:hover, .overlay a:focus {
