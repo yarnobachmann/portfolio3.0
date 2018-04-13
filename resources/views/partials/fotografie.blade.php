@@ -22,71 +22,29 @@
   <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow: auto;">
     <div class="nav-bar">
     @include('partials.navbar')
-    <div class="offset-5" id="gallery" style="display:none;">
+    <div class="offset-5 d-none" id="gallery">
 
-			<img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-				data-description="Image 1 Description">
-
-			<img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-				data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-				data-description="Image 2 Description">
         <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
   				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
   				data-description="Image 1 Description">
 
-  			<img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-  				data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-  				data-description="Image 2 Description">
           <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
     				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
     				data-description="Image 1 Description">
-
-    			<img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-    				data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-    				data-description="Image 2 Description">
             <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
       				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
       				data-description="Image 1 Description">
-
-      			<img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-      				data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-      				data-description="Image 2 Description">
               <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
         				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
         				data-description="Image 1 Description">
-
-        			<img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-        				data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-        				data-description="Image 2 Description">
                 <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
           				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
           				data-description="Image 1 Description">
 
-          			<img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-          				data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-          				data-description="Image 2 Description">
-                  <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-            				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-            				data-description="Image 1 Description">
 
-            			<img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-            				data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-            				data-description="Image 2 Description">
-                    <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-              				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-              				data-description="Image 1 Description">
-                      <img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-                        data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-                        data-description="Image 2 Description">
-              			<img alt="Image 2 Title" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-              				data-image="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg"
-              				data-description="Image 2 Description">
-                      <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-                				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-                				data-description="Image 1 Description"><img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-                  				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-                  				data-description="Image 1 Description">
+
+
+
 
 
 
@@ -103,7 +61,7 @@
 @endsection
 
 @section('js')
-<script type='text/javascript' src="{{ asset('/plugins/unitegallery/dist/js/unitegallery.min.js') }}"></script>
+<script type='text/javascript' src="{{ asset('/plugins/unitegallery/dist/js/unitegallery.js') }}"></script>
 <link rel='stylesheet' href="{{ asset('/plugins/unitegallery/dist/css/unite-gallery.css') }}" type='text/css' />
 <script type='text/javascript' src="{{ asset('/plugins/unitegallery/dist/themes/tiles/ug-theme-tiles.js') }}"></script>
 <link rel='stylesheet' 	href='/plugins/unitegallery/dist/skins/alexis/alexis.css' type='text/css' />
@@ -128,6 +86,17 @@
     theme_enable_preloader: false,
   });
   });
+
+  jQuery(document).ready(function(){
+    var div = $('#gallery');
+    var img = $('.photos');
+
+    div.removeClass('d-none');
+
+    setTimeout(function(){
+      img.addClass('animated-gallery bounce infinite');
+    }, 500);
+});
   </script>
   <script>
 
