@@ -19,7 +19,7 @@
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow1" alt="arrow">
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow2" alt="arrow">
   </div>
-  <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow: auto;">
+  <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow-y:scroll;">
     <div class="nav-bar">
     @include('partials.navbar')
     <div class="offset-5 d-none" id="gallery">
@@ -49,7 +49,7 @@
 
 
 		</div>
-  </div>
+
 
 @endsection
 
@@ -89,13 +89,15 @@
 
   jQuery(document).ready(function(){
     var div = $('#gallery');
-    var img = $('.photos');
+    var img = $('.ug-thumb-image');
 
     div.removeClass('d-none');
 
     setTimeout(function(){
       img.addClass('animated-gallery bounce infinite');
     }, 500);
+
+
 });
   </script>
   <script>
@@ -107,7 +109,15 @@
       $(".arrow1").click(function(event){
         $('#scroll').animate({scrollTop: '-=150px'}, 300);
       });
+
+      var x = document.getElementById("photo");
+
+      htmlThumb.print();
+
+      x.addClass('animated-gallery bounce infinite');
+
     });
   </script>
+
 
 @endsection

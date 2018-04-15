@@ -2477,6 +2477,8 @@ function UGThumbsGeneral(){
 
 		}
 
+
+
 		this._____________EXTERNAL_SETTERS__________ = function(){};
 
 
@@ -2495,7 +2497,7 @@ function UGThumbsGeneral(){
 			var zIndex = objItem.index + 1;
 			var thumbStyle = "style='z-index:"+zIndex+";'";
 
-		 	var htmlThumb = "<div class='ug-thumb-wrapper animated-gallery fadeInUpBig"+classAddition+"' " + thumbStyle + "></div>";
+		 	var htmlThumb = "<div id='photo' class='ug-thumb-wrapper animated-gallery fadeInUpBig"+classAddition+"' " + thumbStyle + "></div>";
 
 
 			 if(g_options.thumb_wrapper_as_link == true){

@@ -2,11 +2,16 @@
 
 .left-banner {
   background-image: url('/img/banners/contact.jpg');
-  background-position: 35% 50%;
+  background-position: right center;
   background-size: cover;
 }
 
-
+.banner-contact {
+  height: 100%;
+  right: 1%;
+  position: absolute;
+  object-fit: cover;
+}
 
 /* form */
 

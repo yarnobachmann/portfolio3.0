@@ -13,8 +13,22 @@
   animation-fill-mode: both;
 }
 
+.animated-text {
+  animation-duration: 2.0s;
+  animation-fill-mode: both;
+}
 .animated-gallery {
   animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
+
+.animated-logo {
+  animation-duration: 6.0s;
+  animation-fill-mode: both;
+}
+
+.animated-banner {
+  animation-duration: 8.5s;
   animation-fill-mode: both;
 }
 
@@ -1294,10 +1308,28 @@
   50% {
     opacity: 1;
   }
+
 }
 
 .zoomIn {
   animation-name: zoomIn;
+}
+
+@keyframes zoomInOut {
+  from {
+    opacity: 1;
+    transform: scale3d(1.05, 1.05, 1.05) translate3d(10px, -10px, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+
+}
+
+.zoomInOut {
+  animation-name: zoomInOut;
 }
 
 @keyframes zoomInDown {
@@ -1521,6 +1553,21 @@
 
 .slideInUp {
   animation-name: slideInUp;
+}
+
+@keyframes slideInUpBig {
+  from {
+    transform: translate3d(0, 350%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUpBig {
+  animation-name: slideInUpBig;
 }
 
 @keyframes slideOutDown {

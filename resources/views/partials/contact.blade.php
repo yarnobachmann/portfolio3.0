@@ -16,13 +16,13 @@
 
 
   <div class="col-4 left-banner no-padding-margin">
-
+    <img src="{{ asset('/img/banners/contact.svg') }}" class="banner-contact animated-banner" alt="banner-contact">
   </div>
-  <div class="col-8 no-padding-margin" style="background-color: #c6314f;">
+  <div class="col-8 no-padding-margin" style="background-color: #c6314f; overflow: hidden;">
     <div class="nav-bar">
     @include('partials.navbar')
       <div class="offset-1 col-6 form">
-        {{ Form::open() }}
+        {{ Form::open(['class' => 'd-none animated form']) }}
 
           {{ Form::label('naam', 'Naam:') }}
           {{ Form::text('naam', null, ['class' => 'form-control', 'required' => '', 'placeholder' => 'Hier het naampje!']) }}
@@ -50,4 +50,21 @@
     </div>
   </div>
 
+@endsection
+
+@section('js')
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var form = $('.form');
+    var hidden = 'd-none';
+    var banner = $('.banner-contact');
+
+    form.removeClass(hidden).addClass('slideInUp');
+
+    setTimeout(function(){
+      banner.addClass('fadeOut');
+    }, 5000);
+
+  });
+  </script>
 @endsection

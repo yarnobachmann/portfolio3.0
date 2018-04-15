@@ -29,12 +29,26 @@
   color: #2b2d2c;
 }
 
+/* banner left */
+
+.banner-homepage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
 /* logo */
 
 .logo {
   position: absolute;
   width: 25%;
   top: 12%;
+
+}
+
+.logo-pos{
+  transform: scale3d(1.5, 1.5, 1.5) translate3d(50px, -50px, 0);
 }
 /* homepage image cover */
 
