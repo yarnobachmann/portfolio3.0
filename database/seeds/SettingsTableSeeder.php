@@ -10,59 +10,12 @@ class SettingsTableSeeder extends Seeder
      */
     public function run()
     {
-        $setting = $this->findSetting('site.title');
-        if (!$setting->exists) {
-            $setting->fill([
-                'display_name' => 'Site Title',
-                'value'        => 'Site Title',
-                'details'      => '',
-                'type'         => 'text',
-                'order'        => 1,
-                'group'        => 'Site',
-            ])->save();
-        }
-
-        $setting = $this->findSetting('site.description');
-        if (!$setting->exists) {
-            $setting->fill([
-                'display_name' => 'Site Description',
-                'value'        => 'Site Description',
-                'details'      => '',
-                'type'         => 'text',
-                'order'        => 2,
-                'group'        => 'Site',
-            ])->save();
-        }
-
-        $setting = $this->findSetting('site.logo');
-        if (!$setting->exists) {
-            $setting->fill([
-                'display_name' => 'Site Logo',
-                'value'        => '',
-                'details'      => '',
-                'type'         => 'image',
-                'order'        => 3,
-                'group'        => 'Site',
-            ])->save();
-        }
-
-        $setting = $this->findSetting('site.google_analytics_tracking_id');
-        if (!$setting->exists) {
-            $setting->fill([
-                'display_name' => 'Google Analytics Tracking ID',
-                'value'        => '',
-                'details'      => '',
-                'type'         => 'text',
-                'order'        => 4,
-                'group'        => 'Site',
-            ])->save();
-        }
 
         $setting = $this->findSetting('admin.bg_image');
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => 'Admin Background Image',
-                'value'        => '',
+                'value'        => '/settings/April2018/modthGAjQzI8LQYMPn0W.jpg',
                 'details'      => '',
                 'type'         => 'image',
                 'order'        => 5,
@@ -74,7 +27,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => 'Admin Title',
-                'value'        => 'Voyager',
+                'value'        => 'Yarno',
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 1,
@@ -86,7 +39,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => 'Admin Description',
-                'value'        => 'Welcome to Voyager. The Missing Admin for Laravel',
+                'value'        => 'Dit is de admin page van Yarno',
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 2,
@@ -110,7 +63,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => 'Admin Icon Image',
-                'value'        => '',
+                'value'        => '/settings/April2018/Cvs8A5O897IttKDMJYgD.png',
                 'details'      => '',
                 'type'         => 'image',
                 'order'        => 4,

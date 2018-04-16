@@ -10,34 +10,6 @@ class DataTypesTableSeeder extends Seeder
      */
     public function run()
     {
-        $dataType = $this->dataType('slug', 'posts');
-        if (!$dataType->exists) {
-            $dataType->fill([
-                'name'                  => 'posts',
-                'display_name_singular' => 'Post',
-                'display_name_plural'   => 'Posts',
-                'icon'                  => 'voyager-news',
-                'model_name'            => 'TCG\\Voyager\\Models\\Post',
-                'policy_name'           => 'TCG\\Voyager\\Policies\\PostPolicy',
-                'controller'            => '',
-                'generate_permissions'  => 1,
-                'description'           => '',
-            ])->save();
-        }
-
-        $dataType = $this->dataType('slug', 'pages');
-        if (!$dataType->exists) {
-            $dataType->fill([
-                'name'                  => 'pages',
-                'display_name_singular' => 'Page',
-                'display_name_plural'   => 'Pages',
-                'icon'                  => 'voyager-file-text',
-                'model_name'            => 'TCG\\Voyager\\Models\\Page',
-                'controller'            => '',
-                'generate_permissions'  => 1,
-                'description'           => '',
-            ])->save();
-        }
 
         $dataType = $this->dataType('slug', 'users');
         if (!$dataType->exists) {
@@ -54,19 +26,6 @@ class DataTypesTableSeeder extends Seeder
             ])->save();
         }
 
-        $dataType = $this->dataType('name', 'categories');
-        if (!$dataType->exists) {
-            $dataType->fill([
-                'slug'                  => 'categories',
-                'display_name_singular' => 'Category',
-                'display_name_plural'   => 'Categories',
-                'icon'                  => 'voyager-categories',
-                'model_name'            => 'TCG\\Voyager\\Models\\Category',
-                'controller'            => '',
-                'generate_permissions'  => 1,
-                'description'           => '',
-            ])->save();
-        }
 
         $dataType = $this->dataType('slug', 'menus');
         if (!$dataType->exists) {
@@ -90,6 +49,76 @@ class DataTypesTableSeeder extends Seeder
                 'display_name_plural'   => 'Roles',
                 'icon'                  => 'voyager-lock',
                 'model_name'            => 'TCG\\Voyager\\Models\\Role',
+                'controller'            => '',
+                'generate_permissions'  => 1,
+                'description'           => '',
+            ])->save();
+        }
+
+        $dataType = $this->dataType('slug', 'images');
+        if (!$dataType->exists) {
+            $dataType->fill([
+                'name'                  => 'images',
+                'display_name_singular' => 'Image',
+                'display_name_plural'   => 'Images',
+                'icon'                  => 'voyager-photos',
+                'model_name'            => 'App\Image',
+                'controller'            => '',
+                'generate_permissions'  => 1,
+                'description'           => '',
+            ])->save();
+        }
+
+        $dataType = $this->dataType('slug', 'projects');
+        if (!$dataType->exists) {
+            $dataType->fill([
+                'name'                  => 'projects',
+                'display_name_singular' => 'Project',
+                'display_name_plural'   => 'Projects',
+                'icon'                  => 'voyager-categories',
+                'model_name'            => 'App\Project',
+                'controller'            => '',
+                'generate_permissions'  => 1,
+                'description'           => '',
+            ])->save();
+        }
+
+        $dataType = $this->dataType('slug', 'abouts');
+        if (!$dataType->exists) {
+            $dataType->fill([
+                'name'                  => 'abouts',
+                'display_name_singular' => 'Over',
+                'display_name_plural'   => 'over',
+                'icon'                  => 'voyager-news',
+                'model_name'            => 'App\About',
+                'controller'            => '',
+                'generate_permissions'  => 1,
+                'description'           => '',
+            ])->save();
+        }
+
+        $dataType = $this->dataType('slug', 'contacts');
+        if (!$dataType->exists) {
+            $dataType->fill([
+                'name'                  => 'contacts',
+                'display_name_singular' => 'Contact',
+                'display_name_plural'   => 'Contacts',
+                'icon'                  => 'voyager-logbook',
+                'model_name'            => 'App\Contact',
+                'controller'            => '',
+                'generate_permissions'  => 1,
+                'description'           => '',
+            ])->save();
+        }
+
+        $dataType = $this->dataType('slug', 'project-views');
+        if (!$dataType->exists) {
+            $dataType->fill([
+                'name'                  => 'project_views',
+                'display_name_singular' => 'Project View',
+                'display_name_plural'   => 'Project Views',
+                'icon'                  => 'voyager-documentation',
+                'model_name'            => 'App\ProjectView',
                 'controller'            => '',
                 'generate_permissions'  => 1,
                 'description'           => '',
