@@ -16,19 +16,23 @@ Route::get('/', function () {
 });
 
 Route::get('/fotografie', function () {
-    return view('partials.fotografie');
+    $images = App\Image::all();
+    return view('partials.fotografie', compact('images'));
 });
 
 Route::get('/webdesign', function () {
-    return view('partials.webdesign');
+    $projects = App\Project::all();
+    return view('partials.webdesign', compact('projects'));
 });
 
 Route::get('/over', function () {
-    return view('partials.over');
+    $about = App\About::firstorFail();
+    return view('partials.over', compact('about'));
 });
 
 Route::get('/contact', function () {
-    return view('partials.contact');
+    $contact = App\Contact::firstorFail();
+    return view('partials.contact', compact('contact'));
 });
 
 

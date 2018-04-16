@@ -23,31 +23,10 @@
     <div class="nav-bar">
     @include('partials.navbar')
     <div class="offset-5 d-none" id="gallery">
-
-        <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-  				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-  				data-description="Image 1 Description">
-
-          <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-    				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-    				data-description="Image 1 Description">
-            <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-      				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-      				data-description="Image 1 Description">
-              <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-        				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-        				data-description="Image 1 Description">
-                <img alt="Image 1 Title" src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-          				data-image="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"
-          				data-description="Image 1 Description">
-
-
-
-
-
-
-
-
+      @foreach($images as $image)
+        <img alt="{{$image->title}}" src="/storage/{{$image->image}}"
+  				data-image="/storage/{{$image->image}}">
+      @endforeach
 		</div>
 
 
@@ -109,13 +88,6 @@
       $(".arrow1").click(function(event){
         $('#scroll').animate({scrollTop: '-=150px'}, 300);
       });
-
-      var x = document.getElementById("photo");
-
-      htmlThumb.print();
-
-      x.addClass('animated-gallery bounce infinite');
-
     });
   </script>
 

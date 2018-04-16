@@ -40,11 +40,11 @@
       </div>
       <div class="col-4 contact-text">
         <h3>Yarno Bachmann</h3>
-        <a href="#"><h3>yarnobachmann@gmail.com</h3></a>
-        <a href="https://api.whatsapp.com/send?phone=31637241371&text=Hallo%20mijn%20naam%20is%20" target="_blank"> <h3>+31 6 37241371</h3> </a>
+        <a href="#"><h3>{{ $contact->email }}</h3></a>
+        <a href="https://api.whatsapp.com/send?phone={{ $contact->whapp_number }}&text=Hallo%20mijn%20naam%20is%20" target="_blank"> <h3>{{ $contact->phone_number }}</h3> </a>
         <br>
-        <h3>Oranjedorpstraat 58</h3>
-        <h3>Nieuw-Dordrecht</h3>
+        <h3>{{ $contact->street_name }} {{ $contact->house_number }}</h3>
+        <h3>{{ $contact->recidence }}</h3>
         <a href="https://www.instagram.com/_yarno_/" target="_blank"> <img src="{{ asset('/img/social/instagram-logo.svg') }}" alt="instagram" class="instagram"></a> <a href="https://www.linkedin.com/in/jarno-bachmann-3b1022137/" target="_blank"> <img src="{{ asset('/img/social/linkedin-logo.svg') }}" alt="linkedin" class="linkedin"></a>
       </div>
     </div>

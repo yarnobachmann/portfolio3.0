@@ -25,24 +25,16 @@
     <div class="space">
 
     </div>
-    <div class="offset-1 col-10 d-none animated bar-project " style="background-color: #2b2d2c; height: 280px; margin-top:5%;  display:flex; justify-content: center; align-items:center;">
-      <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
-        <h1>Kingscode</h1>
+
+    @foreach($projects as $project)
+      <div class="offset-1 col-10 d-none animated bar-project " style="background-color: #2b2d2c; height: 280px; margin-top:5%;  display:flex; justify-content: center; align-items:center;">
+        <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
+          <h1>{{$project->name}}</h1>
+        </div>
+        <img src="/storage/{{$project->image}}" style="height:80%;" alt="">
       </div>
-      <img src="{{ asset('/img/placehold/project.png') }}" style="height:80%;" alt="">
-    </div>
-    <div class="offset-1 col-10  d-none animated bar-project" style="background-color: #2b2d2c; height: 280px; margin-top:5%;  display:flex; justify-content: center; align-items:center;">
-      <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
-        <h1>Kingscode</h1>
-      </div>
-      <img src="{{ asset('/img/placehold/project.png') }}" style="height:80%;" alt="">
-    </div>
-    <div class="offset-1 col-10  d-none animated bar-project" style="background-color: #2b2d2c; height: 280px; margin-top:5%;  display:flex; justify-content: center; align-items:center;">
-      <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
-        <h1>Kingscode</h1>
-      </div>
-      <img src="{{ asset('/img/placehold/project.png') }}" style="height:80%;" alt="">
-    </div>
+    @endforeach
+    
     <div class="space-bottom">
 
     </div>
@@ -72,7 +64,7 @@
     var index = 0;
 
     var interval = setInterval(function() {
-      
+
       $(bars[index]).removeClass(hidden).addClass('slideInUpBig');
 
       index++;

@@ -26,7 +26,8 @@
         <!-- start of the page content -->
         <div style="height: 100%; width: 100%; padding: 0; margin: 0;" data-enhance="false" data-role="page">
             <div class="row" style="height: 100vh; width: 100%; margin: 0; padding: 0;">
-              <div class="loader"></div>
+              <!-- loader -->
+              <!-- <div class="loader"></div> -->
                 @yield('content')
             </div>
         </div>
