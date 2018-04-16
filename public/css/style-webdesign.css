@@ -23,6 +23,12 @@
 
 /* projects */
 
+.anchor {
+  width: 80%;
+  display: block;
+  padding: 0;
+}
+
 .space {
   height: 200px;
 }

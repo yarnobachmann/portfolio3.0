@@ -11,28 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('partials.home');
-});
 
-Route::get('/fotografie', function () {
-    $images = App\Image::all();
-    return view('partials.fotografie', compact('images'));
-});
+Route::get('/', 'Frontend\PagesController@home');
 
-Route::get('/webdesign', function () {
-    $projects = App\Project::all();
-    return view('partials.webdesign', compact('projects'));
-});
+Route::get('/fotografie', 'Frontend\PagesController@fotografie');
 
-Route::get('/over', function () {
-    $about = App\About::firstorFail();
-    return view('partials.over', compact('about'));
-});
+Route::get('/webdesign', 'Frontend\PagesController@webdesign');
 
-Route::get('/contact', function () {
-    $contact = App\Contact::firstorFail();
-    return view('partials.contact', compact('contact'));
+Route::get('/over', 'Frontend\PagesController@over');
+
+Route::get('/contact', 'Frontend\PagesController@contact');
+
+Route::get('/webdesign/{id}', 'Frontend\PagesController@project');
+
+Route::bind('id', function($value, $route)
+{
+    return App\ProjectView::where('project_name', $value)->firstOrFail();
 });
 
 

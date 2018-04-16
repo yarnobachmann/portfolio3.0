@@ -1,0 +1,41 @@
+/* banner */
+
+
+.banner-project {
+  max-width: 500px;
+  top: 40%;
+  position: absolute;
+}
+
+/* text */
+
+.top-text {
+  position: absolute;
+  top: 40%;
+  height: 100%;
+  font-size: 24px;
+}
+
+.left-text {
+  position: absolute;
+  top: 90%;
+  font-size: 24px;
+}
+
+/* logo */
+
+.project-logo {
+  position: absolute;
+  left:2%;
+  top:2%;
+}
+
+/* afbeelding */
+
+.image-project {
+  max-width: 500px;
+  max-height: 500px;
+  top: 40%;
+  right: 10%;
+  position: absolute;
+}
