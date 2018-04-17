@@ -18,8 +18,8 @@ class CreateProjectViewsTable extends Migration {
 			$table->text('section_1', 65535);
 			$table->text('section_2', 65535);
 			$table->string('side_image');
-			$table->string('right_image');
-			$table->string('link_website');
+			$table->string('right_image')->nullable();
+			$table->string('link_website')->nullable();
 			$table->integer('project_id');
 			$table->timestamps();
 			$table->string('project_name');
