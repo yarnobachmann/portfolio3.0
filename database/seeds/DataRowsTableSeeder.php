@@ -369,7 +369,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '',
+                'details'      => '{"quality":"60%","upsize":true}',
                 'order'        => 3,
             ])->save();
         }
@@ -449,7 +449,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '',
+                'details'      => '{"quality":"60%","upsize":true}',
                 'order'        => 3,
             ])->save();
         }
@@ -785,7 +785,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '',
+                'details'      => '{"quality":"60%","upsize":true}',
                 'order'        => 4,
             ])->save();
         }
@@ -801,7 +801,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '',
+                'details'      => '{"quality":"60%","upsize":true}',
                 'order'        => 5,
             ])->save();
         }
