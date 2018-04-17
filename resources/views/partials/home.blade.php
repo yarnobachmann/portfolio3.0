@@ -52,11 +52,11 @@
     });
 
     if($(".loader").not(":visible")) {
+              
+    setTimeout(function(){
       text.removeClass(hidden).addClass('slideInLeft')
-
-    
       logo.removeClass(hidden).addClass('zoomInOut');
-
+    }, 100);
 
     setTimeout(function(){
       banner.addClass('fadeOut');

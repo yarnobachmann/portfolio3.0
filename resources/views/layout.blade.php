@@ -27,7 +27,7 @@
         <div style="height: 100%; width: 100%; padding: 0; margin: 0;" data-enhance="false" data-role="page">
             <div class="row" style="height: 100vh; width: 100%; margin: 0; padding: 0;">
               <!-- loader -->
-              <!-- <div class="loader"></div> -->
+              <div class="loader"> <img src="/img/page_loader.png" class="image" style="width:20%;" alt=""> </div>
                 @yield('content')
             </div>
         </div>
@@ -38,7 +38,9 @@
         <script src="{{ URL::asset('plugins/bootstrap/js/bootstrap.js')}}"></script>
         <script type="text/javascript">
           $(window).on('load', function() {
-            $(".loader").fadeOut("slow");
+            setTimeout(function(){
+              $(".loader").fadeOut("slow");
+            }, 100);
           });
         </script>
         @yield('js')

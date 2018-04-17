@@ -29,7 +29,7 @@
       <p>{{ $project_view[0]->section_1 }}</p>
     </div>
     <div class="offset-8 col-3 left-text">
-      <p>{{ $project_view[0]->section_2 }}</p>
+      <p>{{ $project_view[0]->section_2 }}</p> <a href="{{ $project_view[0]->link_website }}" target="_blank" style="text-decoration:underline; color:#292b2c;">{{ $project_view[0]->project_name }}</a>
     </div>
   </div>
 

@@ -65,15 +65,18 @@
     var hidden = 'd-none';
     var index = 0;
 
-    var interval = setInterval(function() {
+    setTimeout(function(){
+      var interval = setInterval(function() {
 
-      $(bars[index]).removeClass(hidden).addClass('slideInUpBig');
+        $(bars[index]).removeClass(hidden).addClass('slideInUpBig');
 
-      index++;
-        if(index == bars.length){
-            clearInterval(interval);
-        }
-      }, 250);
+        index++;
+          if(index == bars.length){
+              clearInterval(interval);
+          }
+        }, 250);
+    }, 100);
+
 
   });
 </script>

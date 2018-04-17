@@ -40,7 +40,7 @@
       </div>
       <div class="col-4 contact-text">
         <h3>Yarno Bachmann</h3>
-        <a href="#"><h3>{{ $contact->email }}</h3></a>
+        <a href="mailto:{{ $contact->email }}?Subject=Website"><h3>{{ $contact->email }}</h3></a>
         <a href="https://api.whatsapp.com/send?phone={{ $contact->whapp_number }}&text=Hallo%20mijn%20naam%20is%20" target="_blank"> <h3>{{ $contact->phone_number }}</h3> </a>
         <br>
         <h3>{{ $contact->street_name }} {{ $contact->house_number }}</h3>
@@ -59,7 +59,10 @@
     var hidden = 'd-none';
     var banner = $('.banner-contact');
 
-    form.removeClass(hidden).addClass('slideInUp');
+
+    setTimeout(function(){
+      form.removeClass(hidden).addClass('slideInUp');
+    }, 100);
 
     setTimeout(function(){
       banner.addClass('fadeOut');

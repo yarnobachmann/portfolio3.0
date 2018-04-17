@@ -369,7 +369,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '{"quality":"60%","upsize":true}',
+                'details'      => '',
                 'order'        => 3,
             ])->save();
         }
@@ -449,7 +449,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '{"quality":"60%","upsize":true}',
+                'details'      => '{"quality":"90%","upsize":true}',
                 'order'        => 3,
             ])->save();
         }
@@ -460,7 +460,7 @@ class DataRowsTableSeeder extends Seeder
                 'type'         => 'relationship',
                 'display_name' => 'project_views',
                 'required'     => 0,
-                'browse'       => 1,
+                'browse'       => 0,
                 'read'         => 1,
                 'edit'         => 1,
                 'add'          => 1,
@@ -785,7 +785,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '{"quality":"60%","upsize":true}',
+                'details'      => '{"quality":"90%","upsize":true}',
                 'order'        => 4,
             ])->save();
         }
@@ -801,7 +801,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '{"quality":"60%","upsize":true}',
+                'details'      => '{"quality":"90%","upsize":true}',
                 'order'        => 5,
             ])->save();
         }
@@ -860,7 +860,7 @@ class DataRowsTableSeeder extends Seeder
                 'type'         => 'relationship',
                 'display_name' => 'projects',
                 'required'     => 0,
-                'browse'       => 1,
+                'browse'       => 0,
                 'read'         => 1,
                 'edit'         => 1,
                 'add'          => 1,

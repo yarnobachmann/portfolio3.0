@@ -70,11 +70,11 @@
     var div = $('#gallery');
     var img = $('.ug-thumb-image');
 
-    div.removeClass('d-none');
+
 
     setTimeout(function(){
-      img.addClass('animated-gallery bounce infinite');
-    }, 500);
+      div.removeClass('d-none');
+    }, 100);
 
 
 });

@@ -12,12 +12,12 @@ class ImagesTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('images')->delete();
-
+        
         \DB::table('images')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'title' => 'Sofie portret foto',
@@ -25,7 +25,7 @@ class ImagesTableSeeder extends Seeder
                 'created_at' => '2018-04-16 12:27:06',
                 'updated_at' => '2018-04-16 12:27:06',
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'title' => 'Muurbegroeiing boven oud houten bankje',
@@ -33,7 +33,7 @@ class ImagesTableSeeder extends Seeder
                 'created_at' => '2018-04-16 13:01:11',
                 'updated_at' => '2018-04-16 13:04:29',
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'title' => 'Sofie met zonnebril effect',
@@ -41,8 +41,40 @@ class ImagesTableSeeder extends Seeder
                 'created_at' => '2018-04-16 13:09:44',
                 'updated_at' => '2018-04-16 13:09:44',
             ),
+            3 => 
+            array (
+                'id' => 4,
+                'title' => 'Captain morgan lage sluiterstijd',
+                'image' => 'images/April2018/AiFJqWMAKe5B8D94rGGF.jpg',
+                'created_at' => '2018-04-17 19:35:11',
+                'updated_at' => '2018-04-17 19:35:11',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'title' => 'Oldtimer in Rotterdam',
+                'image' => 'images/April2018/kwU2yHsetRmygXub0f8g.jpg',
+                'created_at' => '2018-04-17 19:36:47',
+                'updated_at' => '2018-04-17 19:36:47',
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'title' => 'Sofie bovenaf view',
+                'image' => 'images/April2018/4xPfz0F5iC3CvWEk6zZ9.jpg',
+                'created_at' => '2018-04-17 20:10:12',
+                'updated_at' => '2018-04-17 20:10:12',
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'title' => 'Zwart/Wit foto van Sofie',
+                'image' => 'images/April2018/fNIxwLAE3q5RNVD2RiFc.jpg',
+                'created_at' => '2018-04-17 20:22:04',
+                'updated_at' => '2018-04-17 20:23:13',
+            ),
         ));
-
-
+        
+        
     }
 }
