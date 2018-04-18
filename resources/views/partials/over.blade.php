@@ -15,10 +15,10 @@
 @section('content')
 
 
-  <div class="col-4 left-banner no-padding-margin">
+  <div class="col-4 left-banner no-padding-margin hide">
     <img src="{{ asset('/img/banners/over.svg') }}" class="banner-over animated-banner" alt="banner-over">
   </div>
-  <div class="col-8 no-padding-margin" style="background-color: #c6314f;">
+  <div class="col-8 no-padding-margin" style="background-color: #c6314f; overflow: hidden;">
     <div class="nav-bar">
     @include('partials.navbar')
     <img src="{{ asset('/img/banners/over-front.svg') }}" class="yarno-svg animated-banner over-image" alt="Yarno">

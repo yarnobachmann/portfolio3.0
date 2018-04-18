@@ -26,10 +26,10 @@
     <h1 class="no-padding-margin left-text1 left-text animated-text d-none uppercase">Foto</h1>
     <h1 class="no-padding-margin left-text2 left-text animated-text d-none uppercase">Web</h1>
   </div>
-  <div class="col-8" style="background-color: #c6314f;">
+  <div class="col-xl-8 col-md-8 col-12" style="background-color: #c6314f;">
     <img src="{{ asset('/img/logo/logo.svg') }}" class="logo d-none animated-logo" alt="Logo">
-    <h1 class="no-padding-margin right-text1 uppercase">grafie</h1>
-    <h1 class="no-padding-margin right-text2 uppercase">design</h1>
+    <h1 class="no-padding-margin right-text1 uppercase"><span class="hide">Foto</span>grafie</h1>
+    <h1 class="no-padding-margin right-text2 uppercase"><span class="hide">Web</span>design</h1>
     <div id="nav-icon" onclick="openNav()">
       <span></span>
       <span></span>
@@ -52,7 +52,7 @@
     });
 
     if($(".loader").not(":visible")) {
-              
+
     setTimeout(function(){
       text.removeClass(hidden).addClass('slideInLeft')
       logo.removeClass(hidden).addClass('zoomInOut');

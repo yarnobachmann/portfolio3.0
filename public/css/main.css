@@ -77,8 +77,8 @@
     position: fixed;
     left: 0px;
     top: 0px;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -134,4 +134,271 @@
 
 .active {
   text-decoration: underline!important;
+}
+
+/* responsive mobile navbar */
+
+@media only screen and (min-width: 360px) {
+  .logo{
+    width: 20%;
+  }
+
+  .nav-bar {
+    margin-top: 2%;
+    margin-right: -18%;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 12px;
+  }
+
+  .nav-bar a {
+    padding-right: 5px;
+    font-size: 8px;
+  }
+
+}
+@media only screen and (min-width: 320px) {
+  .logo{
+    width: 23%;
+  }
+
+  .nav-bar {
+    margin-top: 2%;
+    margin-right: -18%;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 14px;
+  }
+
+  .nav-bar a {
+    padding-right: 5px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .logo{
+    width: 25%;
+  }
+
+  .nav-bar {
+    margin-top: 2%;
+    margin-right: -16%;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 16px;
+  }
+
+  .nav-bar a {
+    padding-right: 5px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 411px) {
+  .logo{
+    width: 28%;
+  }
+
+  .nav-bar {
+    margin-top: 3%;
+    margin-right: -14%;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 16px;
+  }
+
+  .nav-bar a {
+    padding-right: 5px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .logo{
+    width: 28%;
+  }
+
+  .nav-bar {
+    margin-top: 3%;
+    margin-right: -10%;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 16px;
+  }
+
+  .nav-bar a {
+    padding-right: 5px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .logo{
+    width: 35%;
+  }
+
+  .nav-bar {
+    margin-top: 3%;
+    margin-right: -4%;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 22px;
+  }
+
+  .nav-bar a {
+    padding-right: 8px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo{
+    width: 35%;
+  }
+
+  .nav-bar {
+    margin-top: 3%;
+    margin-right: -4%;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 22px;
+  }
+
+  .nav-bar a {
+    padding-right: 8px;
+    font-size: 18px;
+  }
+}
+
+/* responsive destop navbar */
+@media only screen and (min-width: 1024px) {
+  .logo{
+    width: 80%;
+  }
+
+  .nav-bar {
+    margin-top: 2%;
+    margin-right: 2%;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 32px;
+  }
+
+  .nav-bar a {
+    padding-right: 20px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .logo{
+    width: 85%;
+  }
+
+  .nav-bar {
+    margin-top: 2%;
+    margin-right: 2%;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 36px;
+  }
+
+  .nav-bar a {
+    padding-right: 20px;
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .logo{
+    width: 90%;
+  }
+
+  .nav-bar {
+    margin-top: 2%;
+    margin-right: 2%;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 38px;
+  }
+
+  .nav-bar a {
+    padding-right: 20px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .logo{
+    width: 95%;
+  }
+
+  .nav-bar {
+    margin-top: 2%;
+    margin-right: 2%;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 40px;
+  }
+
+  .nav-bar a {
+    padding-right: 20px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .logo{
+    width: 120%;
+  }
+
+  .nav-bar {
+    margin-top: 2%;
+    margin-right: 2%;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .nav-bar span {
+    font-size: 60px;
+  }
+
+  .nav-bar a {
+    padding-right: 20px;
+    font-size: 50px;
+  }
 }

@@ -28,7 +28,57 @@
 
       @foreach($projects as $project)
       <a href="{{ url('/webdesign') }}/{{ $project->name }}" class="offset-1 col-10 anchor">
-        <div class=" d-none animated bar-project col-12" style="background-color: #2b2d2c; height: 280px; margin-top:5%;  display:flex; justify-content: center; align-items:center;">
+        <div class=" d-none animated bar-project col-12" style="">
+          <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
+            <h1>{{$project->name}}</h1>
+          </div>
+          <img src="/storage/{{$project->image}}" style="height:80%;" alt="">
+        </div>
+      </a>
+      @endforeach
+      @foreach($projects as $project)
+      <a href="{{ url('/webdesign') }}/{{ $project->name }}" class="offset-1 col-10 anchor">
+        <div class=" d-none animated bar-project col-12" style="">
+          <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
+            <h1>{{$project->name}}</h1>
+          </div>
+          <img src="/storage/{{$project->image}}" style="height:80%;" alt="">
+        </div>
+      </a>
+      @endforeach
+      @foreach($projects as $project)
+      <a href="{{ url('/webdesign') }}/{{ $project->name }}" class="offset-1 col-10 anchor">
+        <div class=" d-none animated bar-project col-12" style="">
+          <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
+            <h1>{{$project->name}}</h1>
+          </div>
+          <img src="/storage/{{$project->image}}" style="height:80%;" alt="">
+        </div>
+      </a>
+      @endforeach
+      @foreach($projects as $project)
+      <a href="{{ url('/webdesign') }}/{{ $project->name }}" class="offset-1 col-10 anchor">
+        <div class=" d-none animated bar-project col-12" style="">
+          <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
+            <h1>{{$project->name}}</h1>
+          </div>
+          <img src="/storage/{{$project->image}}" style="height:80%;" alt="">
+        </div>
+      </a>
+      @endforeach
+      @foreach($projects as $project)
+      <a href="{{ url('/webdesign') }}/{{ $project->name }}" class="offset-1 col-10 anchor">
+        <div class=" d-none animated bar-project col-12" style="">
+          <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
+            <h1>{{$project->name}}</h1>
+          </div>
+          <img src="/storage/{{$project->image}}" style="height:80%;" alt="">
+        </div>
+      </a>
+      @endforeach
+      @foreach($projects as $project)
+      <a href="{{ url('/webdesign') }}/{{ $project->name }}" class="offset-1 col-10 anchor">
+        <div class=" d-none animated bar-project col-12" style="">
           <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
             <h1>{{$project->name}}</h1>
           </div>

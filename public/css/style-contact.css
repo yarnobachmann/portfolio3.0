@@ -101,3 +101,49 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #030303;
 }
+
+/* responsive desktop */
+
+@media screen and (min-width: 1024px) {
+  textarea {
+      font-size: 19px!important;
+      height: 200px;
+  }
+
+  input[type=submit] {
+      font-size: 19px;
+      left: 60%;
+      width: 40%;
+  }
+
+  .instagram {
+    width: 35px;
+    height: 35px;
+  }
+
+  .linkedin {
+    margin-left: 5%;
+    width: 35px;
+    height: 35px;
+  }
+
+  input[type=text] {
+      font-size: 19px;
+  }
+
+  input[type=email] {
+      font-size: 19px;
+  }
+
+  label {
+    font-size: 19px;
+  }
+
+  .contact-text h3  {
+    font-size: 19px;
+  }
+  .contact-text  {
+    top: 30%;
+    right: 6%;
+  }
+}

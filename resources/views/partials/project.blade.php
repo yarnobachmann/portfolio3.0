@@ -17,10 +17,10 @@
 
 
 
-  <div class="col-12 no-padding-margin" style="background-color: #c6314f; overflow-y: auto;">
+  <div class="col-12 no-padding-margin" style="background-color: #c6314f; overflow-y: auto; overflow-x: hidden;">
     <img src="/storage/{{ $project[0]->image }}" class="project-logo" alt="">
-    <img src="/storage/{{ $project_view[0]->side_image }}" class="banner-project" alt="banner-project">
-    <img src="/storage/{{ $project_view[0]->right_image }}" class="image-project" alt="image-project">
+    <img src="/storage/{{ $project_view[0]->side_image }}" class="banner-project hide" alt="banner-project">
+    <img src="/storage/{{ $project_view[0]->right_image }}" class="image-project hide" alt="image-project">
 
     <div class="nav-bar">
     @include('partials.navbar')
