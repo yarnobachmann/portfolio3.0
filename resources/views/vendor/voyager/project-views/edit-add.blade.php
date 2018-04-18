@@ -87,15 +87,15 @@
                         <div class="panel-body">
                           <div class="form-group">
                             <label for="section_1">Section 1:</label>
-                            <textarea class="form-control" rows="8" id="section_1" name="section_1" placeholder="section 1 text" style="resize: vertical;">@if(isset($dataTypeContent->section_1)){{ $dataTypeContent->section_1 }}@endif</textarea>
+                            <textarea class="form-control" required="" minlength="2" rows="8" id="section_1" name="section_1" placeholder="section 1 text" style="resize: vertical;">@if(isset($dataTypeContent->section_1)){{ $dataTypeContent->section_1 }}@endif</textarea>
                           </div>
                           <div class="form-group">
                             <label for="section_2">Section 2:</label>
-                            <textarea class="form-control" rows="8" id="section_2" name="section_2" placeholder="section 2 text" style="resize: vertical;">@if(isset($dataTypeContent->section_2)){{ $dataTypeContent->section_2 }}@endif</textarea>
+                            <textarea class="form-control" required="" minlength="2" rows="8" id="section_2" name="section_2" placeholder="section 2 text" style="resize: vertical;">@if(isset($dataTypeContent->section_2)){{ $dataTypeContent->section_2 }}@endif</textarea>
                           </div>
                           <div class="form-group">
                             <label for="project_name">Project naam (Zelfde als project):</label>
-                            <input type="text" class="form-control" id="project_name" name="project_name" placeholder="project naam" value="@if(isset($dataTypeContent->project_name)){{ $dataTypeContent->project_name }}@endif">
+                            <input type="text" required="" minlength="2" class="form-control" id="project_name" name="project_name" placeholder="project naam" value="@if(isset($dataTypeContent->project_name)){{ $dataTypeContent->project_name }}@endif">
                           </div>
                           <div class="form-group">
                             <label for="link_website">Link website (optioneel):</label>
@@ -103,7 +103,7 @@
                           </div>
                           <div class="form-group">
                             <label for="project_id">Project:</label>
-                            <select class="form-control" id="project_id" name="project_id">
+                            <select required="" class="form-control" id="project_id" name="project_id">
                                 @foreach(App\Project::all() as $project)
                                     <option value="{{ $project->id }}"@if(isset($dataTypeContent->project_id) && $dataTypeContent->project_id == $project->id) selected="selected"@endif>{{ $project->name }}</option>
                                 @endforeach
@@ -124,7 +124,7 @@
                           </div>
                           <div class="panel-body">
                             @if(isset($dataTypeContent->side_image))
-                                <img src="{{ filter_var($dataTypeContent->side_image, FILTER_VALIDATE_URL) ? $dataTypeContent->side_image : Voyager::image( $dataTypeContent->side_image ) }}" style="max-width: 100%; max-height:500px;" />
+                                <img id="image_side" src="{{ filter_var($dataTypeContent->side_image, FILTER_VALIDATE_URL) ? $dataTypeContent->side_image : Voyager::image( $dataTypeContent->side_image ) }}" style="max-width: 100%; max-height:500px;" />
                             @endif
                             <div class="form-group">
                               <label for="side_image" style="font-weight:bold;">Afbeelding banner links:</label>
@@ -163,6 +163,39 @@
         @if ($isModelTranslatable)
             $('.side-body').multilingual({"editing": true});
         @endif
+        $('.save').attr("style", "pointer-events: none;");
+        if (document.getElementById('image_side')){
+          $('.save').attr("style", "pointer-events: auto;");
+        } else{
+          $('.save').attr("style", "pointer-events: none;");
+        }
+
+        $('#side_image').bind('change', function() {
+
+          //this.files[0].size gets the size of your file.
+
+
+          if (this.files[0].size >= 2039670) {
+            alert("Je afbeelding is groter dan 2039670 bytes namelijk:" + this.files[0].size +" kies a.u.b een andere afbeelding");
+          }else{
+            $('.save').attr("style", "pointer-events: auto;");
+          }
+
+        });
+
+        $('#right_image').bind('change', function() {
+
+          //this.files[0].size gets the size of your file.
+
+
+          if (this.files[0].size >= 2039670) {
+            alert("Je afbeelding is groter dan 2039670 bytes namelijk:" + this.files[0].size +" kies a.u.b een andere afbeelding");
+          }else{
+
+          }
+
+        });
+
         });
 
     </script>

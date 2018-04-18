@@ -28,6 +28,7 @@
   position: absolute;
   left:2%;
   top:2%;
+      max-height: 64px;
 }
 
 /* afbeelding */
@@ -50,6 +51,8 @@
   .project-logo {
     top: 8%;
     width: 52%;
+    max-height: 112px;
+
 }
 
 .top-text {
@@ -126,11 +129,16 @@
   .banner-project {
     max-width: 300px;
   }
+.col-12 {
+  overflow-y: scroll!important;
+}
+
   .project-logo {
     position: absolute;
     left: 2%;
     top: 4%;
     width: 61%;
+    max-height: 212px;
 }
 
 .top-text {
@@ -167,6 +175,7 @@
     left: 2%;
     top: 4%;
     width: 61%;
+    max-height: 212px;
 }
 
 .top-text {
@@ -198,6 +207,7 @@
     left: 2%;
     top: 4%;
     width: 61%;
+    max-height: 265px;
 }
 
 .image-project {
@@ -225,6 +235,7 @@
     left: 2%;
     top: 4%;
     width: 50%;
+    max-height: 252px;
 }
 
 .image-project {
@@ -252,6 +263,7 @@
     left: 2%;
     top: 4%;
     width: 50%;
+    max-height: 244px;
 }
 
 .image-project {
@@ -279,6 +291,8 @@
     left: 2%;
     top: 4%;
     width: 50%;
+    max-height: 323px;
+
 }
 
 .image-project {
@@ -302,6 +316,8 @@
     max-width: 480px;
     max-height: 480px;
     right: 12%;
+    max-height: 323px;
+
   }
   .banner-project {
     max-width: 570px;
@@ -319,6 +335,7 @@
 @media screen and (min-width: 2560px){
   .project-logo{
         width: 41%;
+            max-height: 356px;
   }
   .banner-project{
     max-width: 748px;
@@ -361,6 +378,7 @@
       left: 2%;
       top: 4%;
       width: 31%;
+          max-height: 86px;
   }
   }
 

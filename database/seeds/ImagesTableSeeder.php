@@ -73,6 +73,30 @@ class ImagesTableSeeder extends Seeder
                 'created_at' => '2018-04-17 20:22:04',
                 'updated_at' => '2018-04-17 20:23:13',
             ),
+            7 => 
+            array (
+                'id' => 8,
+                'title' => 'Harry Potter brug in Schotland',
+                'image' => 'images/April2018/QkSAuqQq6uKuMUZKXEeX.jpg',
+                'created_at' => '2018-04-18 23:23:52',
+                'updated_at' => '2018-04-18 23:23:52',
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'title' => 'Valkparkiet bij oude dierentuin Emmen',
+                'image' => 'images/April2018/fOgDo9XXrByAaUViahq4.jpg',
+                'created_at' => '2018-04-18 23:25:04',
+                'updated_at' => '2018-04-18 23:25:04',
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'title' => 'Mijn kat in een liggende positie',
+                'image' => 'images/April2018/Fe7kRY6rAKyynBt6oBd0.jpg',
+                'created_at' => '2018-04-18 23:27:14',
+                'updated_at' => '2018-04-18 23:27:14',
+            ),
         ));
         
         

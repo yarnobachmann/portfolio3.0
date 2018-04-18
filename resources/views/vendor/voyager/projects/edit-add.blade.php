@@ -86,7 +86,7 @@
                         </div>
                         <div class="panel-body">
                             <label for="name">Naam:</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="naam van project" value="@if(isset($dataTypeContent->name)){{ $dataTypeContent->name }}@endif">                            </div>
+                            <input type="text" required="" minlength="2" maxlength="44" class="form-control" id="name" name="name" placeholder="naam van project" value="@if(isset($dataTypeContent->name)){{ $dataTypeContent->name }}@endif">                            </div>
                       </div>
                   </div>
                     <div class="col-md-4">
@@ -101,7 +101,7 @@
                           </div>
                           <div class="panel-body">
                             @if(isset($dataTypeContent->image))
-                                <img src="{{ filter_var($dataTypeContent->image, FILTER_VALIDATE_URL) ? $dataTypeContent->image : Voyager::image( $dataTypeContent->image ) }}" style="width:100%" />
+                                <img id="images-project" src="{{ filter_var($dataTypeContent->image, FILTER_VALIDATE_URL) ? $dataTypeContent->image : Voyager::image( $dataTypeContent->image ) }}" style="width:100%" />
                             @endif
                               <label for="image">Afbeelding:</label>
                               <input type="file" class="form-control" id="image" name="image" placeholder="image" value="@if(isset($dataTypeContent->image)){{ $dataTypeContent->image }}@endif">
@@ -131,6 +131,25 @@
         @if ($isModelTranslatable)
             $('.side-body').multilingual({"editing": true});
         @endif
+        $('.save').attr("style", "pointer-events: none;");
+        if (document.getElementById('images-project')){
+          $('.save').attr("style", "pointer-events: auto;");
+        } else{
+          $('.save').attr("style", "pointer-events: none;");
+        }
+
+        $('#image').bind('change', function() {
+
+          //this.files[0].size gets the size of your file.
+
+
+          if (this.files[0].size >= 2039670) {
+            alert("Je afbeelding is groter dan 2039670 bytes namelijk:" + this.files[0].size +" kies a.u.b een andere afbeelding");
+          }else{
+            $('.save').attr("style", "pointer-events: auto;");
+          }
+
+        });
         });
     </script>
 @stop

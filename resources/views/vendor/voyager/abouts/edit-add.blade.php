@@ -54,7 +54,7 @@
 
 @section('content')
     <div class="page-content container-fluid">
-        <form class="form-edit-add" role="form" action="@if(isset($dataTypeContent->id)){{ route('voyager.abouts.update', $dataTypeContent->id) }}@else{{ route('voyager.abouts.store') }}@endif" method="POST" enctype="multipart/form-data">
+        <form class="form-edit-add" id="form" role="form" action="@if(isset($dataTypeContent->id)){{ route('voyager.abouts.update', $dataTypeContent->id) }}@else{{ route('voyager.abouts.store') }}@endif" method="POST" enctype="multipart/form-data">
             <!-- PUT Method if we are editing -->
             @if(isset($dataTypeContent->id))
                 {{ method_field("PUT") }}
@@ -87,13 +87,14 @@
                         <div class="panel-body">
                           <div class="form-group">
                             <label for="section_1">Section 1:</label>
-                            <textarea class="form-control" rows="8" id="section_1" name="section_1" placeholder="section 1 text" style="resize: vertical;">@if(isset($dataTypeContent->section_1)){{ $dataTypeContent->section_1 }}@endif</textarea>
+                            <textarea class="form-control" required="" minlength='10' maxlength='621' rows="8" id="section_1" name="section_1" placeholder="section 1 text" style="resize: vertical;">@if(isset($dataTypeContent->section_1)){{ $dataTypeContent->section_1 }}@endif</textarea>
                           </div>
                           <div class="form-group">
                             <label for="section_2">Section 2:</label>
-                            <textarea class="form-control" rows="8" id="section_2" name="section_2" placeholder="section 2 text" style="resize: vertical;">@if(isset($dataTypeContent->section_2)){{ $dataTypeContent->section_2 }}@endif</textarea>
+                            <textarea class="form-control" required="" minlength='10' maxlength='446' rows="8" id="section_2" name="section_2" placeholder="section 2 text" style="resize: vertical;">@if(isset($dataTypeContent->section_2)){{ $dataTypeContent->section_2 }}@endif</textarea>
                           </div>
-                           </div>
+
+                          </div>
                       </div>
                   </div>
                     <div class="col-md-4">
@@ -115,6 +116,7 @@
 @stop
 
 @section('javascript')
+
     <script>
         $('document').ready(function () {
             $('#slug').slugify();

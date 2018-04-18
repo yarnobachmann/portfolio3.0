@@ -15,8 +15,8 @@ class CreateAboutsTable extends Migration {
 		Schema::create('abouts', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('section_1', 1000);
-			$table->string('section_2', 1000);
+			$table->string('section_1', 621);
+			$table->string('section_2', 446);
 			$table->timestamps();
 		});
 	}

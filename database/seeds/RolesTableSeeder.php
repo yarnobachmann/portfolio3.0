@@ -23,5 +23,7 @@ class RolesTableSeeder extends Seeder
                     'display_name' => 'Normal User',
                 ])->save();
         }
+
+
     }
 }

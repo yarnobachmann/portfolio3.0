@@ -204,7 +204,7 @@ return [
     ],
 
     'additional_js' => [
-        //'js/custom.js',
+        'js/parsley.js',
     ],
 
     'googlemaps' => [

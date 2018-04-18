@@ -87,15 +87,15 @@
                         <div class="panel-body">
                           <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="text" class="form-control" id="email" name="email" placeholder="yarnobachmann@gmail.com" value="@if(isset($dataTypeContent->email)){{ $dataTypeContent->email }}@endif">
+                            <input type="text" required="" class="form-control" id="email" name="email" placeholder="yarnobachmann@gmail.com" value="@if(isset($dataTypeContent->email)){{ $dataTypeContent->email }}@endif">
                           </div>
                           <div class="form-group">
                             <label for="phone_number">Telefoon nummer:</label>
-                            <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="+31 6 37241371" value="@if(isset($dataTypeContent->phone_number)){{ $dataTypeContent->phone_number }}@endif">
+                            <input type="text" required="" class="form-control" id="phone_number" name="phone_number" placeholder="+31 6 37241371" value="@if(isset($dataTypeContent->phone_number)){{ $dataTypeContent->phone_number }}@endif">
                           </div>
                           <div class="form-group">
                             <label for="whapp_number">Whatsapp nummer:</label>
-                            <input type="text" class="form-control" id="whapp_number" name="whapp_number" placeholder="31637241371" value="@if(isset($dataTypeContent->whapp_number)){{ $dataTypeContent->whapp_number }}@endif">
+                            <input type="text" required="" class="form-control" id="whapp_number" name="whapp_number" placeholder="31637241371" value="@if(isset($dataTypeContent->whapp_number)){{ $dataTypeContent->whapp_number }}@endif">
                           </div>
                         </div>
                       </div>
@@ -114,17 +114,17 @@
                         <div class="panel-body">
                           <label for="street_name" style="display:block;">Straat:</label>
                             <div class="form-group" style="display: inline-flex;">
-                                <input type="text" class="form-control" id="street_name" name="street_name"
+                                <input type="text" required="" class="form-control" id="street_name" name="street_name"
                                     placeholder="straat naam"
                                     value="@if(isset($dataTypeContent->street_name)){{ $dataTypeContent->street_name }}@endif">
 
-                                <input type="text" class="form-control" id="house_number" name="house_number"
+                                <input type="text" required="" class="form-control" id="house_number" name="house_number"
                                     placeholder="huisnummer"
                                     value="@if(isset($dataTypeContent->house_number)){{ $dataTypeContent->house_number }}@endif" style="margin-left:2%; width: 60%;">
                             </div>
                             <div class="form-group">
                                 <label for="recidence">Plaats:</label>
-                                <input type="text" class="form-control" id="recidence" name="recidence"
+                                <input type="text" required="" class="form-control" id="recidence" name="recidence"
                                     placeholder="plaats"
                                     value="@if(isset($dataTypeContent->recidence)){{ $dataTypeContent->recidence }}@endif">
                             </div>
