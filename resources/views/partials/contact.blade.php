@@ -15,10 +15,10 @@
 @section('content')
 
 
-  <div class="col-4 left-banner no-padding-margin">
+  <div class="col-4 left-banner hide no-padding-margin">
     <img src="{{ asset('/img/banners/contact.svg') }}" class="banner-contact animated-banner" alt="banner-contact">
   </div>
-  <div class="col-8 no-padding-margin" style="background-color: #c6314f; overflow: hidden;">
+  <div class="col-8 no-padding-margin inner" style="background-color: #c6314f; ">
     <div class="nav-bar">
     @include('partials.navbar')
       <div class="offset-1 col-6 form">

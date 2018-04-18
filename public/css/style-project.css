@@ -317,6 +317,9 @@
 }
 
 @media screen and (min-width: 2560px){
+  .project-logo{
+        width: 41%;
+  }
   .banner-project{
     max-width: 748px;
   }

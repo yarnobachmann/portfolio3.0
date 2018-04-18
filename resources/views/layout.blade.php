@@ -27,7 +27,7 @@
         <div style="height: 100%; width: 100%; padding: 0; margin: 0;" data-enhance="false" data-role="page">
             <div class="row" style="height: 100vh; width: 100vw; margin: 0; padding: 0;">
               <!-- loader -->
-              <div class="loader"> <img src="/img/page_loader.png" class="image" style="width:20%;" alt=""> </div>
+              <div class="loader"> <img src="/img/page_loader.gif" class="image" style=";" alt=""> </div>
                 @yield('content')
             </div>
         </div>

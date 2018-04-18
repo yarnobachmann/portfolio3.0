@@ -28,6 +28,8 @@
   </div>
   <div class="col-xl-8 col-md-8 col-12" style="background-color: #c6314f;">
     <img src="{{ asset('/img/logo/logo.svg') }}" class="logo d-none animated-logo" alt="Logo">
+    <img src="{{ asset('/img/banners/homepage-phone.jpg') }}" class="phone-image" alt="">
+    <img src="{{ asset('/img/banners/homepage-phone.svg') }}" class="phone-image animated-banner svg-phone-image" alt="">
     <h1 class="no-padding-margin right-text1 uppercase"><span class="hide">Foto</span>grafie</h1>
     <h1 class="no-padding-margin right-text2 uppercase"><span class="hide">Web</span>design</h1>
     <div id="nav-icon" onclick="openNav()">
@@ -45,6 +47,7 @@
   var text = $('.left-text');
   var hidden = 'd-none';
   var logo = $('.logo');
+  var phone = $('.svg-phone-image')
 
   $(document).ready(function(){
     $('#nav-icon').click(function(){
@@ -60,6 +63,7 @@
 
     setTimeout(function(){
       banner.addClass('fadeOut');
+      phone.addClass('fadeOut');
     }, 5000);
   }else{
 

@@ -441,7 +441,7 @@ html,body{
 
 /* ultrawide screen */
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
   .logo {
     top: 11%;
     width: 25%;
@@ -460,6 +460,37 @@ html,body{
   .right-text2 {
     font-size: 160px;
     top:40%;
+  }
+  .overlay a {
+      font-size: 71px;
+  }
+
+  #nav-icon {
+    width: 63px;
+    height: 85px;
+  }
+
+}
+
+@media only screen and (min-width: 2560px) and (min-height: 1080px) {
+  .logo {
+    top: 10%;
+    width: 23%;
+  }
+
+  .left-text1 {
+    font-size: 180px;
+  }
+  .left-text2 {
+    font-size: 160px;
+    top:43%;
+  }
+  .right-text1 {
+    font-size: 180px;
+  }
+  .right-text2 {
+    font-size: 160px;
+    top:43%;
   }
   .overlay a {
       font-size: 71px;
@@ -591,6 +622,22 @@ html,body{
   .overlay-content {
     top: 0%;
 
+  }
+}
+
+.phone-image{
+  display: none;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) and (orientation: portrait) {
+  .phone-image{
+    display: inline;
   }
 }
 
