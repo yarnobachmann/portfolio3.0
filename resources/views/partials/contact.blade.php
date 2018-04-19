@@ -22,16 +22,39 @@
     <div class="nav-bar">
     @include('partials.navbar')
       <div class="offset-1 col-6 form">
-        {{ Form::open(['class' => 'd-none animated form']) }}
+        @if(Session::has('success'))
 
-          {{ Form::label('naam', 'Naam:') }}
-          {{ Form::text('naam', null, ['class' => 'form-control', 'required' => '', 'placeholder' => 'Hier het naampje!']) }}
+            <div class="alert alert-success" style=" position:absolute; top:0px;" role="alert">
+                <strong>Success:</strong> {{ Session::get('success') }}
+            </div>
+
+        @endif
+
+
+        @if(count($errors) > 0)
+
+
+            <div class="alert alert-danger" role="alert">
+                <strong>Errors:</strong>
+                <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+                </ul>
+            </div>
+
+
+        @endif
+        {{ Form::open(['class' => 'd-none animated form', 'action' => 'Frontend\PagesController@getcontact']) }}
+
+          {{ Form::label('name', 'Naam:') }}
+          {{ Form::text('name', null, ['class' => 'form-control', 'required' => '', 'placeholder' => 'Hier het naampje!']) }}
 
           {{ Form::label('email', 'Email:') }}
           {{ Form::email('email', null, ['class' => 'form-control', 'required' => '', 'placeholder' => 'Emailtje!']) }}
 
-          {{ Form::label('bericht', 'Bericht:') }}
-          {{ Form::textarea('bericht', null, ['class' => 'form-control ', 'required' => '', 'placeholder' => 'Stuur me wat leuks!']) }}
+          {{ Form::label('textmessage', 'Bericht:') }}
+          {{ Form::textarea('textmessage', null, ['class' => 'form-control ', 'required' => '', 'placeholder' => 'Stuur me wat leuks!']) }}
 
           {{ Form::submit('stuur') }}
 

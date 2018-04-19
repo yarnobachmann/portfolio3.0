@@ -10,6 +10,7 @@ use App\Project;
 use App\ProjectView;
 use App\About;
 use App\Contact;
+use Mail;
 
 class PagesController extends Controller
 {
@@ -35,6 +36,29 @@ class PagesController extends Controller
   public function contact() {
     $contact = Contact::firstorFail();
     return view('partials.contact', compact('contact'));
+  }
+
+  public function getcontact(Request $request) {
+    $this->validate($request, [
+         'name' => 'required',
+         'email' => 'required|email',
+         'textmessage' => 'min:10']);
+
+     $data = array(
+         'email' => $request->email,
+         'name' => $request->name,
+         'textmessage' => $request->textmessage
+         );
+
+     Mail::send('emails.contact', $data, function($message) use ($data){
+         $message->from($data['email']);
+         $message->to('yarnobachmann@gmail.com');
+         $message->subject($data['name']);
+     });
+
+     Session::flash('success', 'Je email is gestuurd!');
+
+     return redirect('/contact');
   }
 
   public function project($project_name) {

@@ -22,6 +22,8 @@ Route::get('/over', 'Frontend\PagesController@over');
 
 Route::get('/contact', 'Frontend\PagesController@contact');
 
+Route::post('/contact', 'Frontend\PagesController@getcontact');
+
 Route::get('/webdesign/{id}', 'Frontend\PagesController@project');
 
 Route::bind('id', function($value, $route)
