@@ -75,7 +75,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => 'Google Analytics Client ID (used for admin dashboard)',
-                'value'        => '',
+                'value'        => '13940781057-56rdlp2aei8bggn9m1632c4rm1t505s6.apps.googleusercontent.com',
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 1,

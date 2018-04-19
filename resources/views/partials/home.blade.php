@@ -3,7 +3,7 @@
 @endsection
 
 @section('title')
-    Home
+    Webdesign en Fotografie
 @endsection
 
 @extends('layout')

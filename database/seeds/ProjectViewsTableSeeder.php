@@ -20,14 +20,14 @@ class ProjectViewsTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
-                'section_1' => 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                'section_2' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                'section_1' => 'Kingscode is een programmeurs bedrijf dat websites bouwt voor iedereen van Wordpress naar maatwerk. Kingscode probeert samen met jou ideeën een mooi eindresultaat te maken. Kingscode kan ook pakketten leveren bij het maatwerk zoals het onderhoud pakket en het analytics pakket.',
+                'section_2' => 'Collin Lambers en ik zijn deze v.o.f. begonnen om geweldige dingen te kunnen creëren! Ik ben van plan om in de toekomst ook fotografie bij het bedrijf toe te passen maar voor nu houden we het alleen bij websites bouwen! Bent u geïnteresseerd? Bezoek dan graag de website van Kingscode door de link hier onder.',
                 'side_image' => 'project-views/April2018/PAA3zG7t4URFFcEKow1u.jpg',
                 'right_image' => 'project-views/April2018/vYMwD75kZSxv08CcUXWh.png',
                 'link_website' => 'http://www.kingscode.ga/',
                 'project_id' => 1,
                 'created_at' => '2018-04-16 18:38:59',
-                'updated_at' => '2018-04-17 19:24:12',
+                'updated_at' => '2018-04-19 08:47:08',
                 'project_name' => 'Kingscode',
             ),
         ));
