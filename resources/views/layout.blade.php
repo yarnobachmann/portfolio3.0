@@ -18,7 +18,6 @@
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('plugins/normalize/css/normalize.css')}}" />
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('plugins/bootstrap/css/bootstrap.css')}}" />
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('plugins/animate/css/animate.css') }}" />
-        <link rel="stylesheet" type="text/css" href="{{ URL::asset('plugins/hover/css/hover-min.css') }}" />
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/main.css') }}" />
         @yield('css')
     </head>
@@ -27,7 +26,7 @@
         <div style="height: 100%; width: 100%; padding: 0; margin: 0;" data-enhance="false" data-role="page">
             <div class="row" style="height: 100vh; width: 100vw; margin: 0; padding: 0;">
               <!-- loader -->
-              <div class="loader"> <img src="/img/page_loader.gif" class="image" style=";" alt=""> </div>
+              <div class="loader"> <img src="/img/page_loader.gif" class="image" style="" alt=""> </div>
                 @yield('content')
             </div>
         </div>

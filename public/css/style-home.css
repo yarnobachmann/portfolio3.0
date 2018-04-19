@@ -40,7 +40,8 @@ html,body{
   width: 100%;
   height: 100%;
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* logo */
@@ -53,7 +54,8 @@ html,body{
 }
 
 .logo-pos{
-  transform: scale3d(1.5, 1.5, 1.5) translate3d(50px, -50px, 0);
+  -webkit-transform: scale3d(1.5, 1.5, 1.5) translate3d(50px, -50px, 0);
+          transform: scale3d(1.5, 1.5, 1.5) translate3d(50px, -50px, 0);
 }
 /* homepage image cover */
 
@@ -73,11 +75,9 @@ html,body{
   right: 2%;
   top: 2%;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
   -webkit-transition: .20s ease-in-out;
-  -moz-transition: .20s ease-in-out;
   -o-transition: .20s ease-in-out;
   transition: .20s ease-in-out;
   cursor: pointer;
@@ -93,11 +93,9 @@ html,body{
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
   -webkit-transition: .60s ease-in-out;
-  -moz-transition: .60s ease-in-out;
   -o-transition: .60s ease-in-out;
   transition: .60s ease-in-out;
 }
@@ -105,32 +103,28 @@ html,body{
 #nav-icon span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
 }
 
 #nav-icon span:nth-child(2) {
   top: 18px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
 }
 
 #nav-icon span:nth-child(3) {
   top: 36px;
   -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
 }
 
 #nav-icon.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
   top: -3px;
   left: 8px;
   background: #c6314f;
@@ -143,9 +137,8 @@ html,body{
 
 #nav-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
   top: 39px;
   left: 8px;
   background: #c6314f;
@@ -163,14 +156,25 @@ html,body{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.8);
     overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .overlay-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
     top: 25%;
     text-align: center;
@@ -184,6 +188,8 @@ html,body{
     font-size: 42px;
     color: #c6314f;
     display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     white-space: nowrap;
 
@@ -365,7 +371,6 @@ html,body{
 @media only screen and (width: 768px) and (height:1024px) {
 .col-md-8 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.666667%;
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 58.666667%;
     max-width: 90.666667%;
@@ -373,7 +378,6 @@ html,body{
 
 .col-4 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.333333%;
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 41.333333%;
     max-width: 89.333333%;
@@ -402,7 +406,6 @@ html,body{
 @media only screen and (min-width: 1024px) and (min-height:1366px) {
 .col-md-8 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.666667%;
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 58.666667%;
     max-width: 90.666667%;
@@ -410,7 +413,6 @@ html,body{
 
 .col-4 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.333333%;
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 41.333333%;
     max-width: 89.333333%;
@@ -632,7 +634,8 @@ html,body{
   position: absolute;
   bottom: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 320px) and (max-width: 750px) and (orientation: portrait) {

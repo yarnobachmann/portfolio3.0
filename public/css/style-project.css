@@ -59,7 +59,9 @@
     top: 30%;
     font-size: 12px;
     margin-left: 2%!important;
-    flex: 0 0 50%!important;
+    -webkit-box-flex: 0!important;
+        -ms-flex: 0 0 50%!important;
+            flex: 0 0 50%!important;
     max-width: 50%!important;
 }
 
@@ -67,7 +69,9 @@
   top: 60%;
   font-size: 12px;
   margin-left: 50%!important;
-  flex: 0 0 50%!important;
+  -webkit-box-flex: 0!important;
+      -ms-flex: 0 0 50%!important;
+          flex: 0 0 50%!important;
   max-width: 50%!important;
 }
 

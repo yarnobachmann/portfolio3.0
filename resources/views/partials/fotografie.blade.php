@@ -19,7 +19,7 @@
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow1" alt="arrow">
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow2" alt="arrow">
   </div>
-  <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow-y:scroll;">
+  <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow-y:scroll; overflow-x:hidden;">
     <div class="nav-bar">
     @include('partials.navbar')
     <div class="offset-5 d-none" id="gallery">

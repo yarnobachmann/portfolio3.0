@@ -40,7 +40,9 @@
     display: none;
   }
   .col-11{
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
       max-width: 100%;
   }
 
@@ -59,7 +61,9 @@
     display: inline-block;
   }
   .col-11{
-    flex: 0 0 91.666667%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.666667%;
+            flex: 0 0 91.666667%;
   max-width: 91.666667%;
   }
 

@@ -19,7 +19,7 @@
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow1" alt="arrow">
     <img src="{{ asset('/img/arrow/arrow.svg') }}" class="arrow2" alt="arrow">
   </div>
-  <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow-y:scroll;">
+  <div class="col-11 no-padding-margin uppercase" id="scroll" style="background-color: #c6314f; overflow-y:scroll; overflow-x:hidden;">
     <div class="nav-bar">
     @include('partials.navbar')
     <div class="space">
@@ -27,7 +27,8 @@
       </div>
 
       @foreach($projects as $project)
-      <a href="{{ url('/webdesign') }}/{{ $project->name }}" class="offset-1 col-10 anchor">
+      <div class="bar-project offset-1 col-10" style="padding: 0; background-color: transparent;">
+      <a href="{{ url('/webdesign') }}/{{ $project->name }}" class="col-12 anchor no-padding-margin">
         <div class=" d-none animated bar-project col-12" style="">
           <div class="no-padding-margin project" style="background-color: rgba(3, 3, 3, 0.80); height: 100%; width: 100%; position:absolute;">
             <h1>{{$project->name}}</h1>
@@ -35,8 +36,9 @@
           <img src="/storage/{{$project->image}}" style="height:80%;" alt="">
         </div>
       </a>
+      </div>
       @endforeach
-    
+
 
       <div class="space-bottom">
 

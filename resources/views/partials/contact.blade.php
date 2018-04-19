@@ -16,7 +16,7 @@
 
 
   <div class="col-4 left-banner hide no-padding-margin">
-    <img src="{{ asset('/img/banners/contact.svg') }}" class="banner-contact animated-banner" alt="banner-contact">
+    <img src="{{ asset('/img/banners/contact-cover.jpg') }}" class="banner-contact animated-banner" alt="banner-contact">
   </div>
   <div class="col-8 no-padding-margin inner" style="background-color: #c6314f; ">
     <div class="nav-bar">
